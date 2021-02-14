@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MAIN_PANE" maxHeight="984.0" maxWidth="2528.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="934.0" prefWidth="2528.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UIController">
+   <children>
+      <Line endX="636.0" layoutX="115.0" layoutY="593.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="75.0" />
+      <Line endX="-101.5" endY="-645.0" layoutX="116.0" layoutY="640.0" startX="-101.5" startY="115.5" stroke="#00ffb2" AnchorPane.bottomAnchor="75.0" />
+      <Line endX="625.5" endY="-551.0" layoutX="126.0" layoutY="650.0" startX="625.5" startY="209.0" stroke="#00ffb2" AnchorPane.bottomAnchor="75.0" />
+      <Line endX="636.0" layoutX="115.0" layoutY="98.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="835.5" />
+      <Line endX="635.0" layoutX="116.0" layoutY="250.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="645.5" AnchorPane.leftAnchor="15.0" />
+      <Line endX="635.0" layoutX="115.0" layoutY="427.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="452.5" AnchorPane.leftAnchor="15.0" />
+      <Line endX="635.0" layoutX="115.0" layoutY="670.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="265.5" AnchorPane.leftAnchor="15.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="40.0" layoutY="693.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="105.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="283.0" layoutY="693.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="105.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="520.0" layoutY="693.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="105.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="693.0" prefHeight="31.0" prefWidth="200.0" text="GYR X" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="210.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="693.0" prefHeight="31.0" prefWidth="200.0" text="GYR Y" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="210.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="693.0" prefHeight="31.0" prefWidth="200.0" text="GYR Z" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="210.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="40.0" layoutY="123.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="675.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="283.0" layoutY="123.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="675.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="520.0" layoutY="123.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="675.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="123.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="OPERATIVE TIME" textAlignment="CENTER" AnchorPane.bottomAnchor="780.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="123.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="ALTITUDE" textAlignment="CENTER" AnchorPane.bottomAnchor="780.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="123.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="VERTICAL SPEED" textAlignment="CENTER" AnchorPane.bottomAnchor="780.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="660.0" prefHeight="17.0" prefWidth="69.0" style="-fx-background-color: black;" text="Gyroscope" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="473.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: black;" text="Accelerometer" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="446.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="40.0" layoutY="504.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="294.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="283.0" layoutY="504.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="294.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="520.0" layoutY="504.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="294.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="504.0" prefHeight="31.0" prefWidth="200.0" text="ACC X" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="503.0" prefHeight="31.0" prefWidth="200.0" text="ACC Y" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="503.0" prefHeight="31.0" prefWidth="200.0" text="ACC Z" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="GYRX_PITCH" alignment="CENTER" layoutX="40.0" layoutY="717.0" prefHeight="76.0" prefWidth="200.0" text="22 /s" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="141.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRR_YAW" fx:id="GYRY_YAW" alignment="CENTER" layoutX="283.0" layoutY="717.0" prefHeight="76.0" prefWidth="200.0" text="27 /s" textFill="WHITE" AnchorPane.bottomAnchor="141.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRZ_ROLL" fx:id="GYRZ_ROLL" alignment="CENTER" layoutX="520.0" layoutY="717.0" prefHeight="76.0" prefWidth="200.0" text="0 /s" textFill="WHITE" AnchorPane.bottomAnchor="141.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="798.0" prefHeight="31.0" prefWidth="200.0" text="PITCH" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="105.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="798.0" prefHeight="31.0" prefWidth="200.0" text="YAW" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="105.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="798.0" prefHeight="31.0" prefWidth="200.0" text="ROLL" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="105.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="ACC_X" alignment="CENTER" layoutX="40.0" layoutY="534.0" prefHeight="76.0" prefWidth="200.0" text="0.06 g" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="325.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="ACC_Y" alignment="CENTER" layoutX="283.0" layoutY="534.0" prefHeight="76.0" prefWidth="200.0" text="0.11 g" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="325.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="ACC_Z" alignment="CENTER" layoutX="520.0" layoutY="534.0" prefHeight="76.0" prefWidth="200.0" text="0.97 g" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="325.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="OPTIME" alignment="CENTER" layoutX="40.0" layoutY="167.0" prefHeight="76.0" prefWidth="200.0" text="60.59 s" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="695.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="ALT" alignment="CENTER" layoutX="283.0" layoutY="167.0" prefHeight="76.0" prefWidth="200.0" text="1.24 m" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="695.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="VS" alignment="CENTER" layoutX="520.0" layoutY="167.0" prefHeight="76.0" prefWidth="200.0" text="100 m/s" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="695.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="ORIENTATION_PANE" layoutX="759.0" layoutY="97.0" prefHeight="761.0" prefWidth="410.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="75.0">
+         <children>
+            <Label alignment="CENTER" layoutY="7.0" prefHeight="24.0" prefWidth="410.0" text="ORIENTATION" textFill="#00ffb2">
+               <font>
+                  <Font name="Footlight MT Light" size="24.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" fill="#323232" height="650.0" layoutX="55.0" layoutY="69.0" stroke="#323232" strokeType="INSIDE" width="300.0" />
+         </children>
+      </Pane>
+      <Line endX="165.0" layoutX="1278.0" layoutY="857.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="75.0" />
+      <Line endX="-140.5" endY="-624.0" layoutX="1318.0" layoutY="724.0" startX="-140.5" startY="135.0" stroke="#00ffb2" AnchorPane.bottomAnchor="75.0" />
+      <Line endX="-23.5" endY="-594.1063842773438" layoutX="1467.0" layoutY="724.0" startX="-23.5" startY="165.0" stroke="#00ffb2" AnchorPane.bottomAnchor="75.0" />
+      <Line endX="165.0" layoutX="1278.0" layoutY="99.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="835.5" />
+      <Line endX="165.0" layoutX="1278.0" layoutY="669.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="265.5" />
+      <Line endX="165.0" layoutX="1278.0" layoutY="480.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="452.5" />
+      <Line endX="165.0" layoutX="1278.0" layoutY="287.0" startX="-100.0" stroke="#00ffb2" AnchorPane.bottomAnchor="645.5" />
+      <Label alignment="CENTER" layoutX="1211.0" layoutY="123.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="ACTUATOR A" textAlignment="CENTER" AnchorPane.bottomAnchor="780.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1211.0" layoutY="693.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="IGNITION" textAlignment="CENTER" AnchorPane.bottomAnchor="210.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1211.0" layoutY="503.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="CAMERAS" textAlignment="CENTER" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1211.0" layoutY="308.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="ACTUATOR B" textAlignment="CENTER" AnchorPane.bottomAnchor="590.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ACTUATOR_A" disable="true" layoutX="1213.0" layoutY="175.0" mnemonicParsing="false" onAction="#act_a" prefHeight="76.0" prefWidth="200.0" style="-fx-background-color: #323232;" text="CLOSED" textFill="WHITE" AnchorPane.bottomAnchor="685.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ACTUATOR_B" disable="true" layoutX="1211.0" layoutY="366.0" mnemonicParsing="false" onAction="#act_b" prefHeight="76.0" prefWidth="200.0" style="-fx-background-color: #323232;" text="CLOSED" textFill="WHITE" AnchorPane.bottomAnchor="495.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="IGNITION_BUTTON" disable="true" layoutX="1211.0" layoutY="552.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="200.0" style="-fx-background-color: #323232;" text="READY" textFill="WHITE" AnchorPane.bottomAnchor="115.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CAMERAS" disable="true" layoutX="1211.0" layoutY="557.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="200.0" style="-fx-background-color: #323232;" text="OFF" textFill="WHITE" AnchorPane.bottomAnchor="305.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="CAMERA_B" layoutX="1457.0" layoutY="479.0" prefHeight="382.0" prefWidth="604.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="75.0" />
+      <BorderPane fx:id="CAMERA_A" layoutX="1457.0" layoutY="97.0" prefHeight="374.0" prefWidth="604.0" style="-fx-background-color: #323232;" AnchorPane.bottomAnchor="463.0" />
+      <Label alignment="CENTER" layoutX="2073.0" layoutY="81.0" prefHeight="19.0" prefWidth="138.0" text="RAW TELEMETRY" textFill="#00ffb2" AnchorPane.bottomAnchor="836.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Circle fx:id="TELEMETRY_STATUS" fill="RED" layoutX="619.0" layoutY="899.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="25.0" />
+      <Circle fx:id="RECOVERY_STATUS" fill="RED" layoutX="964.0" layoutY="899.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="25.0" />
+      <Circle fx:id="PAYLOAD_STATUS" fill="RED" layoutX="1311.0" layoutY="899.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="25.0" />
+      <Circle fx:id="PROPULSION_STATUS" fill="RED" layoutX="1658.0" layoutY="899.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="25.0" />
+      <Label layoutX="643.0" layoutY="891.0" prefHeight="27.0" prefWidth="173.0" text="Telemetry GO" textFill="#00ffb2" AnchorPane.bottomAnchor="22.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="990.0" layoutY="885.0" prefHeight="27.0" prefWidth="173.0" text="Recovery GO" textFill="#00ffb2" AnchorPane.bottomAnchor="22.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1346.0" layoutY="885.0" prefHeight="27.0" prefWidth="173.0" text="Payload GO" textFill="#00ffb2" AnchorPane.bottomAnchor="22.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1685.0" layoutY="885.0" prefHeight="27.0" prefWidth="173.0" text="Propulsion GO" textFill="#00ffb2" AnchorPane.bottomAnchor="22.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1188.0" layoutY="5.0" prefHeight="19.0" prefWidth="266.0" text="CONNECTION PORT" textFill="#00ffb2" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Footlight MT Light" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CONNECTION_PORT_FIELD" layoutX="1178.0" layoutY="54.0" prefHeight="25.0" prefWidth="266.0" AnchorPane.topAnchor="60.0" />
+      <Button fx:id="START_LINK" layoutX="1467.0" layoutY="34.0" mnemonicParsing="false" onAction="#GSE_Link" prefHeight="51.0" prefWidth="111.0" style="-fx-background-color: #DBDBDB;" text="START" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="STOP_LINK" layoutX="1593.0" layoutY="35.0" mnemonicParsing="false" onAction="#Close_GSE_Link" prefHeight="51.0" prefWidth="111.0" style="-fx-background-color: #F39C12;" text="STOP" textFill="WHITE" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="ACTA_TIMEOUT" alignment="CENTER" layoutX="1211.0" layoutY="249.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="0 /s" textAlignment="CENTER" AnchorPane.bottomAnchor="650.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ACTB_TIMEOUT" alignment="CENTER" layoutX="1211.0" layoutY="439.0" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #00ffb2;" text="0 /s" textAlignment="CENTER" AnchorPane.bottomAnchor="460.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="RAW_TELEMETRY_LIST" layoutX="2073.0" layoutY="101.0" prefHeight="760.0" prefWidth="450.0" style="-fx-control-inner-background: #323232;" AnchorPane.bottomAnchor="75.0" />
+      <Label alignment="CENTER" layoutX="30.0" layoutY="280.0" prefHeight="17.0" prefWidth="69.0" style="-fx-background-color: black;" text="Propulsion" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="640.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Footlight MT Light" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="40.0" layoutY="313.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="485.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="283.0" layoutY="313.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="485.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="136.0" layoutX="520.0" layoutY="313.0" stroke="BLACK" strokeType="INSIDE" width="200.0" AnchorPane.bottomAnchor="485.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="313.0" prefHeight="31.0" prefWidth="200.0" text="PRESSURE" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="590.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="313.0" prefHeight="31.0" prefWidth="200.0" text="WEIGHT" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="590.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="519.0" layoutY="313.0" prefHeight="31.0" prefWidth="200.0" text="N20 TEMP" textAlignment="CENTER" textFill="#00ffb2" AnchorPane.bottomAnchor="590.0">
+         <font>
+            <Font name="Footlight MT Light" size="18.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="PRESSURE" alignment="CENTER" layoutX="40.0" layoutY="343.0" prefHeight="76.0" prefWidth="200.0" text="100.25 psi" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="515.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="WEIGHT" alignment="CENTER" layoutX="283.0" layoutY="343.0" prefHeight="76.0" prefWidth="200.0" text="25 lbs" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="515.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="GYRX_PITCH" fx:id="N2O_TEMP" alignment="CENTER" layoutX="519.0" layoutY="343.0" prefHeight="76.0" prefWidth="200.0" text="21 C" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="515.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="101.0" fitWidth="716.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <image>
+            <Image url="@/Logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
